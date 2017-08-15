@@ -20,8 +20,19 @@ sure your LDFLAGS and CPPFLAGS are set before the build process is invoked, bash
     python setup.py install --prefix=/usr/local/
    ```
 
+Note, if errors like: libhdfeos.a(GDapi.o): relocation R_X86_64_32 against  ...
+come up in the build phase then the compiled hdfeos code was not fully position independent.
+You must recompile the libhdfeos.a as position-independent, with the equivalent gcc -fPIC flag,
+and then try to rebuild pyhdfeos. 
+
+Also note the that the HDF-EOS library install does not install the headers, e.g. HDFEOSVersion.h,
+by default. 
+
+## Examples
+See examples/ on how to use this module.
+
 ## Bugs
-Please use [ISSUES](https://github.com/HyperplaneOrg/pyhdfeos/issues) to create new issues for problems encounterd.
+Please use [ISSUES](https://github.com/HyperplaneOrg/pyhdfeos/issues) to create new issues for problems encountered.
 
 ## License
 GNU General Public License v3.0
