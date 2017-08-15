@@ -27,7 +27,7 @@ setup (# dist meta-data
          author = "Andrew Michaelis",
          author_email = "amac@hyperplane.org",
          license = "", 
-         platforms = "Linux/Unix",
+         platforms = "Linux, Unix, Mac OS",
          url = "https://github.com/HyperplaneOrg/pyhdfeos",
          py_modules=[],
          cmdclass = {'build_ext': build_ext},
