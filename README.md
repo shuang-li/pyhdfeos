@@ -7,7 +7,7 @@ from the Terra and Aqua platforms. The HDF-EOS library, or HDF-EOS2, is based on
 (HDF) version 4, HDF4 (not HDF5), provided by the HDF Group.
 
 ## Installing
-The pyhdfeos package requires [Cython](http://cython.org), HDF-EOS2[(http://hdfeos.org)] 
+The pyhdfeos package requires [Cython](http://cython.org), [HDF-EOS2](http://hdfeos.org) 
 and [HDF4](https://support.hdfgroup.org/release4/obtain.html) to build and install. Make 
 sure your LDFLAGS and CPPFLAGS are set before the build process is invoked, bash export e.g.
    ```shell
